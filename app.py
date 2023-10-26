@@ -53,7 +53,7 @@ def update_score():
 @app.route('/get-new-board', methods=['GET'])
 def get_new_board():
     board = boggle_game.make_board()
-    session['board'] = board  # Add this line to update the session's board.
+    session['board'] = board  
     return jsonify({'board': board})
 
 
