@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <div class="game-wrapper">
+
+        <div class="board-container">
+            <!-- Display Boggle board -->
+            <table>
+                {% for row in board %}
+                <tr>
+                    {% for cell in row %}
+                    <td>{{ cell }}</td>
+                    {% endfor %}
+                </tr>
+                {% endfor %}
+            </table>
+
+            <form id="guess-form">
+                <label for="guess">Enter Your guess:</label>
+                <input type="text" id="word" name="word" required>
+                <button type="submit" id="submit-guess">Submit</button>
+            </form>
+        </div>
+
+        <div id="result-container">
+            <p id="result-message"></p>
+            <p id="score-display"></p>
+            <p id="timer-display"></p>
+            <p id="high-score-display"></p>
+            <p id="games-played-display"></p>
+            <button id="restart-button" style="display: none;">Restart Game</button>
+
+        </div>
+    </div>
+
+{% endblock %}
+
+
