@@ -74,7 +74,7 @@ p {
 .game-wrapper {
     display: flex;
     align-items: start;
-    gap: 20px;  /* Adjust the spacing between elements if needed */
+    gap: 20px;  
 }
 
 .board-container {
@@ -88,5 +88,5 @@ p {
     border: 1px solid #ccc;
     padding: 20px;
     margin-top: 20px;
-    min-width: 250px;  /* Adjust width if needed */
+    min-width: 250px;  
 }
